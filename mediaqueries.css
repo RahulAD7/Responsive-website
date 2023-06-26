@@ -1,0 +1,178 @@
+@media (max-width:1800px) {}
+
+
+@media (max-width:1300px) {
+    .proj {
+        flex-wrap: wrap;
+    }
+    .flex-text{
+        display: flex;
+        gap: 20px;
+    }
+
+    .map {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+
+    /* section1 */
+    .burger i {
+        display: block;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    /* section6 */
+    .three {
+        flex-direction: column;
+        padding-bottom: 80px;
+    }
+
+    #email {
+        width: 110%;
+    }
+
+    .one {
+        margin: 20px;
+    }
+
+    .area {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .form {
+        justify-content: center;
+    }
+
+    form input{
+        width: 110%;
+    }
+
+    .one input{
+        border: none;
+    }
+
+    .add-text{
+        padding-right: 50px;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:700px){
+
+     /* section6 */
+
+
+    .three {
+        flex-direction: column;
+        padding-bottom: 80px;   
+    }
+
+    #email {
+        width: 90%;
+    }
+
+    .one {
+        margin: 20px;
+    }
+
+    .area {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .form {
+        justify-content: center;
+    }
+
+    form input{
+        width: 90%;
+    }
+
+    .one input{
+        border: none;
+    }
+
+    .add-text{
+        padding-left: 100px;
+        justify-content: center;
+    }
+
+}    
+
+@media screen and (max-width:1024px){
+    .flex{
+       flex-wrap: wrap;
+       gap: 50px;
+    }
+    .flex-text{
+        gap: 50px;
+    }
+    .section5 .fifth img{
+        width: 210px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .flex-text{
+        flex-direction: column;
+    }
+
+    .add-text{
+        width: 80%;
+        padding-left: 80px;
+    }
+}
+
+
+/* @media  (max-width:500px) {
+     section6
+     .three {
+        flex-direction: column;
+        padding-bottom: 80px;
+    }
+
+    #email {
+        width: 60%;
+    }
+
+    .one {
+        margin: 20px;
+    }
+
+    .area {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .form {
+        justify-content: center;
+    }
+
+    form input{
+        width: 60%;
+    }
+
+    .one input{
+        border: none;
+    }
+
+    .add-text{
+        padding-left: 12px;
+        justify-content: center;
+    }
+} */
