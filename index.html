@@ -18,19 +18,22 @@
                 <img src="./images/logo.png" alt="">
             </div>
             <nav>
-                <div class="nav-link">
-                    <ul id="menuList">
-                        <li class="current"><a href="#">HOME</a></li>
-                        <li><a href="#services">SERVICES</a></li>
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#clients">CLIENTS</a></li>
-                        <li><a href="#team">MEET THE TEAM</a></li>
-                        <li><a href="#contact">CONTACT US</a></li>
+                <div class="nav-bar">
+                    <ul class="menuList">
+                        <li class="nav-link" id="current"><a href="#">HOME</a></li>
+                        <li class="nav-link"><a href="#services">SERVICES</a></li>
+                        <li class="nav-link"><a href="#projects">PROJECTS</a></li>
+                        <li class="nav-link"><a href="#clients">CLIENTS</a></li>
+                        <li class="nav-link"><a href="#team">MEET THE TEAM</a></li>
+                        <li class="nav-link"><a href="#contact">CONTACT US</a></li>
                     </ul>
                 </div>
-                <div class="burger" onclick="menu()">
-                    <i class="fa-sharp fa-solid fa-bars"></i>
+                <div class="burger" >
+                   <div class="bar"></div>
+                   <div class="bar"></div>
+                   <div class="bar"></div>
                 </div>
+                
             </nav>
 
         </div>
@@ -246,49 +249,50 @@
             </div>
         </section>
 
+
+
         <!-- section6 -->
-        <section class="section6" id="contact">
-            <div class="container">
-                <div class="map">
-                    <div class="add">
-                        <div class="location">
-                            <iframe width="500" height="400" frameborder="0"
-                                src="https://www.bing.com/maps/embed?h=400&w=500&cp=12.949021672124672~77.60192871094114&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
-                                scrolling="no">
-                            </iframe>
-                            <div style="white-space: nowrap; text-align: center; width: 70px; padding: 6px 0;">
-                                <a id="largeMapLink" target="_blank"
-                                    href="https://www.bing.com/maps?cp=12.949021672124672~77.60192871094114&amp;sty=r&amp;lvl=11&amp;FORM=MBEDLD">View
-                                    Larger Map</a> &nbsp; | &nbsp;
-                                <a id="dirMapLink" target="_blank"
-                                    href="https://www.bing.com/maps/directions?cp=12.949021672124672~77.60192871094114&amp;sty=r&amp;lvl=11&amp;rtp=~pos.12.949021672124672_77.60192871094114____&amp;FORM=MBEDLD">Get
-                                    Directions</a>
-                            </div>
+
+        <section class="section61" id="contact">
+            <div class="contact-in">
+                <div class="contact-flex">
+                    <div class="contact-map">
+                        <iframe width="500" height="400" frameborder="0"
+                            src="https://www.bing.com/maps/embed?h=400&w=500&cp=12.949021672124672~77.60192871094114&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
+                            scrolling="no">
+                        </iframe>
+                        <div style="white-space: nowrap; text-align: center; width: 70px; padding: 6px 0;">
+                            <a id="largeMapLink" target="_blank"
+                                href="https://www.bing.com/maps?cp=12.949021672124672~77.60192871094114&amp;sty=r&amp;lvl=11&amp;FORM=MBEDLD">View
+                                Larger Map</a> &nbsp; | &nbsp;
+                            <a id="dirMapLink" target="_blank"
+                                href="https://www.bing.com/maps/directions?cp=12.949021672124672~77.60192871094114&amp;sty=r&amp;lvl=11&amp;rtp=~pos.12.949021672124672_77.60192871094114____&amp;FORM=MBEDLD">Get
+                                Directions</a>
                         </div>
+
                     </div>
-                
-                <div class="add">
-                    <div class="add-text">
+
+                </div>
+
+                <div class="contact-flex">
+                    <div class="contact-form">
                         <h1>
                             CONTACT US
                         </h1>
                         <h3>LOREM IPSUM DOLOR SIT A MET</h3>
-                        <div class="one">
-                            <form>
-                                <div class="three">
-                                    <input type="text" id="name" name="name" placeholder="Name">
-                                    <input type="text" id="email" name="email" placeholder="Email">
-                                </div>
-                                <input type="text" name="subject" placeholder="Subject" style="height:30px;">
-                                <input type="text" name="message" placeholder="Message" style="height:100px;">
-                                <button id="submit">SUBMIT</button>
-                            </form>
-                        </div>
+                        <form>
+                            <div class="contact-form-flex">
+                                <input type="text" placeholder="Name" class="contact-form-text">
+                                <input type="text" placeholder="Email" class="contact-form-text">
+                            </div>
+                            <input type="text" placeholder="Subject" class="contact-form-text">
+                            <textarea placeholder="Message" class="contact-form-textarea"></textarea>
+                            <button id="submit">SUBMIT</button>
+                        </form>
                     </div>
                 </div>
             </div>
 
-            </div>
         </section>
         <section class="section7">
             <div class="container">

@@ -1,32 +1,100 @@
-@media (max-width:1800px) {}
+@media (max-width:1800px) {
+    .flex-text{
+        gap: 20px;
+    }
+}
 
 
 @media (max-width:1300px) {
-    .proj {
+    .proj{
         flex-wrap: wrap;
     }
+
     .flex-text{
         display: flex;
         gap: 20px;
     }
+    /* .contact-in{
+        flex-wrap: wrap;
+    } */
 
-    .map {
+    .map{
         flex-wrap: wrap;
     }
 
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:910px) {
 
-    /* section1 */
-    .burger i {
+    /* header */
+    .burger {
         display: block;
+        cursor: pointer;
+        float: right;
+    }   
+
+    /* .burger:hover{
+        color: blue;
+    } */
+
+    .bar{
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 5px 0;
+        padding: 2px;
+        background-color: white;
     }
 
-    .nav-link {
-        display: none;
+    .burger.active .bar:nth-child(2){
+        opacity: 0;
     }
 
+    .burger.active .bar:nth-child(1){
+        transform: translateY(9px) rotate(50deg);
+    }
+
+    .burger.active .bar:nth-child(3){
+        transform: translateY(-9px) rotate(-50deg);
+    }
+
+    .menuList{
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0, 0.8);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .menuList.active{
+        left: 0;
+    }
+
+    .nav-link{
+        margin: 15px;
+    }
+
+
+    /* .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    } */
+
+    /* .nav-menu.active{
+        left:0;
+    } */
+
+    /* section2 */
     .row {
         flex-wrap: wrap;
     }
@@ -34,11 +102,11 @@
     /* section6 */
     .three {
         flex-direction: column;
-        padding-bottom: 80px;
+        padding-bottom: 60px;  
     }
 
     #email {
-        width: 110%;
+        width: 400px;
     }
 
     .one {
@@ -51,42 +119,44 @@
         justify-content: center;
     }
 
-    .form {
+    form {
         justify-content: center;
     }
 
     form input{
-        width: 110%;
-    }
-
-    .one input{
-        border: none;
+        width: 400px;
     }
 
     .add-text{
-        padding-right: 50px;
+        /* padding-left: 45px; */
         justify-content: center;
     }
+
+    .contact-in{
+        flex-direction: column;
+    }
+
+    .contact-form{
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
 }
 
 
 @media (max-width:700px){
 
      /* section6 */
-
-
+     /* .section6{
+        
+     } */
     .three {
         flex-direction: column;
-        padding-bottom: 80px;   
+        /* padding-bottom: 80px;    */
     }
 
-    #email {
-        width: 90%;
-    }
-
-    .one {
-        margin: 20px;
-    }
+   
 
     .area {
         flex-direction: column;
@@ -94,23 +164,21 @@
         justify-content: center;
     }
 
-    .form {
+    form {
         justify-content: center;
-    }
-
-    form input{
-        width: 90%;
     }
 
     .one input{
         border: none;
     }
 
-    .add-text{
-        padding-left: 100px;
+    /* .add-text{
+        box-sizing: border-box;
         justify-content: center;
-    }
+    } */
 
+    
+    
 }    
 
 @media screen and (max-width:1024px){
@@ -127,52 +195,46 @@
 }
 
 @media screen and (max-width:600px){
+
     .flex-text{
         flex-direction: column;
     }
 
-    .add-text{
-        width: 80%;
-        padding-left: 80px;
+   form input{
+    width: 270px;
+    /* margin-left: 400px; */
+   }
+   #email{
+    width: 270px;
+   }
+  
+    .section61{
+        width: auto;
     }
+
+    .contact-map{
+       margin: auto;
+    }
+
+    .contact-map{
+        margin: auto;
+    }
+
+    .contact-form{
+        margin: auto;
+    }
+
 }
 
 
-/* @media  (max-width:500px) {
-     section6
-     .three {
-        flex-direction: column;
-        padding-bottom: 80px;
+@media screen and (max-width:530px){
+    .container{
+        width: auto;
+        padding: 0;
+        margin: 0;
     }
 
-    #email {
-        width: 60%;
+    .contact-map iframe{
+        width: 380px;
     }
-
-    .one {
-        margin: 20px;
-    }
-
-    .area {
-        flex-direction: column;
-        gap: 20px;
-        justify-content: center;
-    }
-
-    .form {
-        justify-content: center;
-    }
-
-    form input{
-        width: 60%;
-    }
-
-    .one input{
-        border: none;
-    }
-
-    .add-text{
-        padding-left: 12px;
-        justify-content: center;
-    }
-} */
+}
